@@ -7,6 +7,6 @@ module.exports = defineConfig({
     },
   },
   env:{
-    URL:'https://naveenautomationlabs.com/opencart'
+    URL:'https://naveenautomationlabs.com/opencart/index.php?route=account/register'
   }
 });
