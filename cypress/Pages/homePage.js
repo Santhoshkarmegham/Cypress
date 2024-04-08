@@ -1,4 +1,4 @@
-class homePage{
+export class homePage{
 
     weblocators ={
 
@@ -11,8 +11,17 @@ class homePage{
     }
 
 
-    searchBox(){
-        cy.get(this.weblocators.click_search).type()
+    searchproduct(productname){
+        cy.get(this.weblocators.search_input).type(productname)
+        cy.get(this.weblocators.click_search).click()
+    }
+
+    addToCart(){
+        cy.contains(this.weblocators.addtocart).first().click()
+    }
+
+    verifySuccessMessage(){
+        return cy.get(this.weblocators.successMessage)
     }
 
 }
