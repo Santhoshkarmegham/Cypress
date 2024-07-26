@@ -14,6 +14,13 @@ describe('test automation2',()=>{
             cy.Login(testData.login.userName,testData.login.password)
         })
 
+        after(() =>{
+
+            cy.Logout(testData.logout,testData.logout.buttton)
+        }
+             
+             )
+
 it('Add To Cart',()=>{
     homepageObj.searchproduct(testData.product.productName)
     homepageObj.addToCart()
