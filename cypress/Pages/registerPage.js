@@ -25,6 +25,7 @@ enterFirstname(santhosh){
         cy.get(this.webLocators.lastname).type(k)
     }
 
+    // enterlastName()
 enterEmail(EmailL){
     cy.get(this.webLocators.email).type(EmailL)
 }
